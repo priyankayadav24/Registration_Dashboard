@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+
+app:
+  auth-service-url: ${AUTH_SERVICE_URL:http://localhost:8081}
+  user-service-url: ${USER_SERVICE_URL:http://localhost:8082}
